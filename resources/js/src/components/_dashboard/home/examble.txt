@@ -1,0 +1,114 @@
+---- app features section 1
+
+---- html
+<section className="container" id='features'>
+    <h2 className="line_top line_violet">We’re different</h2>
+    <div className="flex just_between align_center gap">
+        <div className="mt_7 flex_1">
+            <img src={snappyProcess} alt="snappy" />
+            <h3>Snappy Process</h3>
+            <p>
+                Our application process can be completed in minutes, not hours.
+                Don’t get stuck filling in tedious forms.
+            </p>
+        </div>
+        <div className="mt_7 flex_1">
+            <img src={affordablePrices} alt="prices" />
+            <h3>Affordable Prices</h3>
+            <p>
+                We don’t want you worrying about high monthly costs. Our prices may
+                be low, but we still offer the best coverage possible.
+            </p>
+        </div>
+        <div className="mt_7 flex_1">
+            <img src={peopleFirst} alt="people" />
+            <h3>People First</h3>
+            <p>
+                Our plans aren’t full of conditions and clauses to prevent payouts.
+                We make sure you’re covered when you need it.
+            </p>
+        </div>
+    </div>
+</section>
+html ----
+
+---- css 
+
+css ----
+
+app features section 1 ----
+
+
+---- download the app section 
+
+---- html 
+<section className="bg_violet">
+    <div className="flex just_between align_center">
+        <div className="d-none d-lg-flex col-lg-5 text-center mb-5"><img src={phHeader} className="mt-4" width="550" alt="ph-screens" /></div>
+        <div className="col-lg-7 header-2-container white my-5">
+            <h2 className="">Download the <br /> Loan Saathi App</h2>
+            <p className="mt-10 description">Enjoy a faster &amp; easier loan application process with our Android App</p>
+            <a target="_blank" rel="noopener noreferrer" className="google-dwnld" href="#"><img src={dwnld} width="200" alt="dwnld-link" className="google-dwnld" /></a>
+        </div>
+    </div>
+</section>
+html ----
+
+---- css
+.bg_violet {
+  background: url(./svg/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+  background-color: var(--dark-violet);
+  background-size: 50% 100%;
+  padding: 70px;
+  margin: 100px auto;
+}
+
+.bg_violet h2 {
+  font-size: 3em;
+  color: #fff;
+  padding: 0;
+  width: 60%;
+} 
+css ----
+
+download the app section ----
+
+
+---- partner section 
+
+---- html 
+<section className="slots affiliation-section d-block" id='partners'>
+    <div className="affiliation-content text-center">
+        <div className="col-lg-10 offset-lg-1 section-header-1-container black">
+            <h2 className="line_violet">In Partnership with</h2>
+            <p className="mt-20 description">We have partnered with India's leading Banks.</p>
+            <div className='d-flex'>
+                <img src="https://cdnapp.indialends.com/illive/images/creative/sbi-logo.svg" alt="SBI" className="affiliation-lozads affiliation-logos" data-loaded="true" />
+                <img src="https://cdnapp.indialends.com/illive/images/creative/hdfc-logo.svg" alt="HDFC" className="affiliation-lozads affiliation-logos" data-loaded="true" />
+                <img src="https://cdnapp.indialends.com/illive/images/creative/kotak-mahindra-logo.svg" alt="Kotak Mahindra" className="affiliation-lozads affiliation-logos" data-loaded="true" />
+                <img src="https://cdnapp.indialends.com/illive/images/creative/rbl-logo.svg" alt="RBL " className="affiliation-lozads affiliation-logos" data-loaded="true" />
+                <img src="https://cdnapp.indialends.com/illive/images/creative/andhra-logo.svg" alt="Andhra" className="affiliation-lozads affiliation-logos" data-loaded="true" />
+                <img src="https://cdnapp.indialends.com/illive/images/creative/axis-logo.svg" alt="AXIS Bank" className="affiliation-lozads affiliation-logos" data-loaded="true" />
+            </div>
+        </div>
+    </div>
+</section>
+html ----
+
+---- css 
+.affiliation-section.slots {
+    padding: 100px 30px;
+}
+
+.affiliation-section {
+    background-color: #f8fafc;
+}
+
+.affiliation-section .affiliation-logos {
+    margin: 30px auto;
+    padding: 30px;
+    width: 140px;
+}
+css ----
+
+partner section ---- 
