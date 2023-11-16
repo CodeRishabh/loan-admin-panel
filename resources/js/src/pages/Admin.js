@@ -43,7 +43,7 @@ export default function Admin() {
     };
 
     return (
-        <Page title="Admin | LoanPe">
+        <Page title="Admin | OneCredit">
             <Container maxWidth="xl">
                 <Typography variant="h4" gutterBottom>
                     Admin Details

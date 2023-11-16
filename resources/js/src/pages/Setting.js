@@ -5,7 +5,7 @@ import ChangePassword from '../components/_dashboard/settings/ChangePassword'
 
 export default function Setting() {
     return (
-        <Page title="Change Password | LoanPe">
+        <Page title="Change Password | OneCredit">
             <Container>
                 <Typography variant="h4" gutterBottom>
                     Edit Credentials

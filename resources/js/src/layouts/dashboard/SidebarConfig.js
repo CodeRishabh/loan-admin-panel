@@ -52,6 +52,11 @@ const sidebarConfig = [
         path: "/dashboard/rejectedusers",
         icon: getIcon(bxsCalculator),
     },
+    {
+        title: "admin details",
+        path: "/dashboard/admindetails",
+        icon: getIcon(peopleFill),
+    },
 ];
 
 export default sidebarConfig;

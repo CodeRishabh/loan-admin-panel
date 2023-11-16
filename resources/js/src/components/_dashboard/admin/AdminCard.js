@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { fetchAdmin, postAdmin, updateAdmin, uploadImage } from '../../../api';
-import { useDispatch, useSelector } from 'react-redux';
-import { onUpdateAdmin } from '../../../store/actions/index';
+import { useEffect, useState } from "react";
+import { fetchAdmin, postAdmin, updateAdmin, uploadImage } from "../../../api";
+import { useDispatch, useSelector } from "react-redux";
+import { onUpdateAdmin } from "../../../store/actions/index";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
-import storage from '../../../firebase';
+import storage from "../../../firebase";
 import {
     Avatar,
     Box,
@@ -12,8 +12,8 @@ import {
     CardActions,
     CardContent,
     Divider,
-    Typography
-} from '@mui/material';
+    Typography,
+} from "@mui/material";
 
 export default function AdminCard(props) {
     const [adminData, setData] = useState({
@@ -22,53 +22,78 @@ export default function AdminCard(props) {
         bankAccountNumber: "",
         bankIFSCCode: "",
         emailId: "",
-        logo: ""
-    })
-    const [image, setImage] = useState('');
-    const [url, setUrl] = useState('');
+        logo: "",
+        upiId: "",
+        contactNumber: "",
+        whatsappNumber: "",
+    });
+    const [image, setImage] = useState("");
+    const [url, setUrl] = useState("");
     const { adminDetails } = useSelector((state) => state.adminReducers);
     const dispatch = useDispatch();
 
     const upload = async () => {
-        if (image == null)
-            return;
-            const storageRef = ref(storage, `/images/${image.name}`);
-            const imageData = new FormData();
-            imageData.append('image', image);
+        if (image == null) return;
+        const storageRef = ref(storage, `/images/${image.name}`);
+        const imageData = new FormData();
+        imageData.append("image", image);
+        try {
+            const { imagePath } = await uploadImage(imageData);
+            setUrl(imagePath);
+            // setData({ ...adminData, logo: imagePath })
             try {
-                const { imagePath } = await uploadImage(imageData);
-                setUrl(imagePath);
-                // setData({ ...adminData, logo: imagePath })
-                try {
-                    console.log("adminData ", adminData);
-                    const admin = await updateAdmin(adminData.id, {...adminData, logo: imagePath });
-                    console.log("admin ", admin);
-                    dispatch(onUpdateAdmin(admin));
-                } catch (error) {
-                    console.log(error);
-                }
-
+                console.log("adminData ", adminData);
+                const admin = await updateAdmin(adminData.id, {
+                    ...adminData,
+                    logo: imagePath,
+                });
+                console.log("admin ", admin);
+                dispatch(onUpdateAdmin(admin));
             } catch (error) {
                 console.log(error);
             }
-    }
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     useEffect(() => {
-        console.log(adminDetails)
+        console.log(adminDetails);
         if (adminDetails.length > 0) {
-            const { _id, bankAccountNumber, bankAccountname, bankIFSCCode, emailId, logo } = adminDetails[0]
-            setData({ ...adminData, id: _id, bankAccountNumber: bankAccountNumber, bankAccountname: bankAccountname, bankIFSCCode: bankIFSCCode, emailId: emailId, logo: logo })
+            const {
+                _id,
+                bankAccountNumber,
+                bankAccountname,
+                bankIFSCCode,
+                emailId,
+                logo,
+                upiId,
+                contactNumber,
+                whatsappNumber,
+            } = adminDetails[0];
+            setData({
+                ...adminData,
+                id: _id,
+                bankAccountNumber: bankAccountNumber,
+                bankAccountname: bankAccountname,
+                bankIFSCCode: bankIFSCCode,
+                emailId: emailId,
+                upiId: upiId,
+                contactNumber: contactNumber,
+                whatsappNumber: whatsappNumber,
+                logo: logo,
+            });
         }
-    }, [adminDetails])
+    }, [adminDetails]);
 
     return (
         <Card {...props}>
             <CardContent>
                 <Box
                     sx={{
-                        alignItems: 'center',
-                        display: 'flex',
-                        flexDirection: 'column'
+                        alignItems: "center",
+                        display: "flex",
+                        flexDirection: "column",
                     }}
                 >
                     <Avatar
@@ -76,47 +101,47 @@ export default function AdminCard(props) {
                         sx={{
                             height: 64,
                             mb: 2,
-                            width: 64
+                            width: 64,
                         }}
                     />
                     <Typography
                         color="textPrimary"
                         gutterBottom
                         variant="h5"
-                    >
+                    ></Typography>
+                    <Typography color="textSecondary" variant="body2">
+                        Accountname :{" "}
+                        <strong>{adminData.bankAccountname}</strong>
                     </Typography>
-                    <Typography
-                        color="textSecondary"
-                        variant="body2"
-                    >
-                        Accountname : <strong>{adminData.bankAccountname}</strong>
+                    <Typography color="textSecondary" variant="body2">
+                        AccountNumber :{" "}
+                        <strong>{adminData.bankAccountNumber}</strong>
                     </Typography>
-                    <Typography
-                        color="textSecondary"
-                        variant="body2"
-                    >
-                        AccountNumber : <strong>{adminData.bankAccountNumber}</strong>
-                    </Typography>
-                    <Typography
-                        color="textSecondary"
-                        variant="body2"
-                    >
+                    <Typography color="textSecondary" variant="body2">
                         IFSCCode : <strong>{adminData.bankIFSCCode}</strong>
                     </Typography>
-                    <Typography
-                        color="textSecondary"
-                        variant="body2"
-                    >
+                    <Typography color="textSecondary" variant="body2">
                         Email : <strong>{adminData.emailId}</strong>
                     </Typography>
-
+                    <Typography color="textSecondary" variant="body2">
+                        Upi ID : <strong>{adminData.upiId}</strong>
+                    </Typography>
+                    <Typography color="textSecondary" variant="body2">
+                        Contact No. : <strong>{adminData.contactNumber}</strong>
+                    </Typography>
+                    <Typography color="textSecondary" variant="body2">
+                        Whatsapp No. :{" "}
+                        <strong>{adminData.whatsappNumber}</strong>
+                    </Typography>
                 </Box>
             </CardContent>
             <Divider />
             <CardActions>
                 <input
                     type="file"
-                    onChange={(e) => { setImage(e.target.files[0]) }}
+                    onChange={(e) => {
+                        setImage(e.target.files[0]);
+                    }}
                 />
                 <Button
                     color="primary"
@@ -130,5 +155,3 @@ export default function AdminCard(props) {
         </Card>
     );
 }
-
-

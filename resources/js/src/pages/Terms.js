@@ -7,12 +7,12 @@ export default function Terms() {
                 <h1 class="title text-gray-600 text-center" id="page-title">Terms and Conditions </h1>
                 <div className="m-5">
                     <p>(LAST UPDATED: 12/02/2023)</p>
-                    <p>These terms and conditions (“Terms”) govern the use of our digital lending platform - mobile application called the “LoanPe - Instant Personal Loan App” (“App”, which expression shall include future releases of the application)
-                        and website at <a href="https://loanpe.net">https://loanpe.net/</a> (“Website”). For the purpose of these Terms, the App and the Website shall be collectively referred to as the “Platform”. Please read these Terms in conjunction
-                        with our privacy policy available at <a href="https://loanpe.net/privacypolicy">https://loanpe.net/privacypolicy</a> (“Privacy Policy”).</p>
+                    <p>These terms and conditions (“Terms”) govern the use of our digital lending platform - mobile application called the “OneCredit - Instant Personal Loan App” (“App”, which expression shall include future releases of the application)
+                        and website at <a href="https://OneCredit.net">https://OneCredit.net/</a> (“Website”). For the purpose of these Terms, the App and the Website shall be collectively referred to as the “Platform”. Please read these Terms in conjunction
+                        with our privacy policy available at <a href="https://OneCredit.net/privacypolicy">https://OneCredit.net/privacypolicy</a> (“Privacy Policy”).</p>
                     <p>1. CONTACT DETAILS</p>
-                    <p>The Platform is made available to “you”, an end user of the Platform, by LoanPe.<br />In order to address any questions or grievances that you may have regarding the use of the Services, please contact our email.<br />Email Address:
-                        <a href="mailto: help@loanpe.net"> help@loanpe.net</a><br /></p>
+                    <p>The Platform is made available to “you”, an end user of the Platform, by OneCredit.<br />In order to address any questions or grievances that you may have regarding the use of the Services, please contact our email.<br />Email Address:
+                        <a href="mailto: help@OneCredit.net"> help@OneCredit.net</a><br /></p>
                     <p>2. ELIGIBILITY</p>
                     <p>You may use our Platform if you are at least 18 years old and are eligible to enter into a contract under the Indian Contract Act, 1872. </p>
                     <p>The Services are provided solely in accordance with Indian Laws. We do not represent that the content available on or through our Platform is appropriate for use or is available in other jurisdictions.</p>
@@ -32,7 +32,7 @@ export default function Terms() {
                         mobile carriers, and utility companies) to your mobile telephone number(s) in connection with one or more transactions across multiple financial accounts (including purchase, payments, billing information and service notifications
                         related thereto) and includes, without limitation: i) your phone number; ii) your email address; iii) masked card data (only to the extent that such card data is disclosed in such messages); and iv) information relating to the
                         transaction in question, including identity of the service or product and the price or fee paid or payable in respect thereof.</p>
-                    <p>(d) You hereby consent to LoanPe using your Transaction Information to identify and obtain Credit Facilities that are appropriate for you, for which we may charge you a facilitation fee.</p>
+                    <p>(d) You hereby consent to OneCredit using your Transaction Information to identify and obtain Credit Facilities that are appropriate for you, for which we may charge you a facilitation fee.</p>
                     <p>(e) The services described in this Section 8 collectively constitute the “Services”. Please note that we may from time to time modify existing products, features, or services, or otherwise introduce new features or services on or through
                         the Platform. The term “Services” shall include any modification to existing, as well as any new features, products, or services. </p>
                     <p>(f) You may not uninstall the App or deactivate your account on the Platform prior to the repayment of your Credit Facility in full. In the event that you uninstall the App or deactivate your account on the Platform at any point prior
@@ -95,14 +95,14 @@ export default function Terms() {
                     <p>(b) Upon termination - i) the Services will “time-out”; ii) you shall not be eligible to avail any features of the Services; and iii) these Terms shall terminate, except for those clauses that expressly or are intended to survive termination
                         or expiry.</p>
                     <p>(d) In case you have not availed any Credit Facility through us, or have repaid the loan amount in full, and do not wish to continue using our Services, and/or wish to deactivate your account, and/or unsubscribe from the mailing lists,
-                        you may do so by contacting us at <a href="mailto:support@loanpe.net">support@loanpe.net</a> .</p>
+                        you may do so by contacting us at <a href="mailto:support@OneCredit.net">support@OneCredit.net</a> .</p>
                     <p>15. DISCLAIMERS AND WARRANTIES</p>
                     <p>(a) We own, operate, and maintain a technology platform, and are not a financial institution under the Companies Act, 2013 or the Banking Regulation Act, 1949 or any other laws for the time being in force in India.</p>
                     <p>(b) We are not a Lender and do not provide any loans or Credit Facilities. We have contractual relationships with Lenders pursuant to which such Lenders offer Credit Facilities to the users of the Platform. Any Credit Facility made
                         available to you by any Lender shall be governed by the terms and conditions agreed between you and the Lender, and we shall not be a party to the same.</p>
                     <p>(c) We, along with our directors, officers, employees, and agents shall not be responsible in any manner whatsoever for the rejection of your Credit Facility application or other refusal by the Lenders of the Credit Facility with or
                         without reason. We are not obliged to inform you of reasons for such refusal/rejection.</p>
-                    <p>(d) To the fullest extent permissible under the applicable law, LoanPe, and any of LoanPe’s third-party partners, licensors, and suppliers, disclaim all warranties, statutory, express or implied, including, but not limited to,
+                    <p>(d) To the fullest extent permissible under the applicable law, OneCredit, and any of OneCredit’s third-party partners, licensors, and suppliers, disclaim all warranties, statutory, express or implied, including, but not limited to,
                         implied warranties of merchantability, fitness for a particular purpose, satisfactory quality, accuracy, title and non-infringement, compatibility, applicability, usability, appropriateness, and any warranty that may arise out
                         of course of performance, course of dealing, or usage of trade. No advice or information, whether oral or written, obtained by you through the Platform will constitute or create any representation or warranty not expressly stated
                         herein.</p>
@@ -122,7 +122,7 @@ export default function Terms() {
                     <p>In no event shall we, our officers, directors and employees, or our contractors, agents, licensors, partners, or suppliers be liable to you for any direct, special, indirect, incidental, consequential, punitive, reliance, or exemplary
                         damages (including without limitation lost business opportunities, lost revenues, or loss of anticipated profits or any other pecuniary or non-pecuniary loss or damage of any nature whatsoever, including but not limited to abuse
                         or breach of data), even if we or an authorised representative have been advised of the possibility of such damages, arising out of or relating to (i) these Terms, (ii) the Services, (iii) your use or inability to use the Services;
-                        or (iv) any other interactions with another user in connection with the Services. If the foregoing limitation is not enforceable, the maximum liability of LoanPe shall be limited to the fee paid by you to avail the Services.</p>
+                        or (iv) any other interactions with another user in connection with the Services. If the foregoing limitation is not enforceable, the maximum liability of OneCredit shall be limited to the fee paid by you to avail the Services.</p>
                     <p>17. INDEMNITY</p>
                     <p>You shall indemnify, defend at our option, and hold us, our parent companies, subsidiaries, affiliates, and their officers, associates successors, assigns, licensors, employees, directors, agents, and representatives, harmless from
                         and against any claim, demand, lawsuits, judicial proceeding, losses, liabilities, damages and costs (including, without limitation, from all damages, liabilities, settlements, costs and attorneys’ fees) due to or arising out of
@@ -146,7 +146,7 @@ export default function Terms() {
                     <p>(b) Assignment - You shall not licence, sell, transfer or assign your rights, obligations, or covenants under these Terms in any manner without our prior written consent. We may grant or withhold this consent in its sole discretion
                         and subject to any conditions it deems appropriate. We may assign its rights to any of its affiliates, subsidiaries, or parent companies, or to any successor in interest of any business associated with the Services without any
                         prior notice to you.</p>
-                    <p>(c) Notices - All notices, requests, demands, and determinations for us under these Terms (other than routine operational communications) shall be sent to <a href="mailto: help@loanpe.net"> help@loanpe.net</a> .</p>
+                    <p>(c) Notices - All notices, requests, demands, and determinations for us under these Terms (other than routine operational communications) shall be sent to <a href="mailto: help@OneCredit.net"> help@OneCredit.net</a> .</p>
                     <p>(d) Third Party Rights - No third party shall have any rights to enforce any Terms contained herein.</p>
                     <p>(e) Translations – We may provide you with translated versions of these Terms solely to assist you with understanding these Terms in greater detail. The English version of these Terms shall be controlling in all respects. In the event
                         of any inconsistency between the English version of these Terms and any translated version, the terms of the English version shall prevail.</p>
@@ -154,7 +154,7 @@ export default function Terms() {
             </div>
 
             <div className="text-center my-4 p-3" style={{ backgroundColor: 'grey', marginBottom: '20px', }}>
-                Copyright © LoanPe 2023. All Rights Reserved.
+                Copyright © OneCredit 2023. All Rights Reserved.
             </div>
         </div >
 

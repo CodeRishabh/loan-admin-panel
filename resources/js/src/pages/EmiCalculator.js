@@ -5,7 +5,7 @@ import Page from '../components/Page'
 
 export default function EmiCalculator() {
     return (
-        <Page title="EMI Calculator | LoanPe">
+        <Page title="EMI Calculator | OneCredit">
             <Container maxWidth="xl">
                 <Typography variant="h4" gutterBottom>
                     EMI Calculator

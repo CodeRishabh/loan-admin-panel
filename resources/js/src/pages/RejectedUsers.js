@@ -31,7 +31,7 @@ export default function RejectedUsers() {
     }, []);
 
     return (
-        <Page title="Rejections | LoanPe">
+        <Page title="Rejections | OneCredit">
             <Container>
                 <Stack
                     direction="row"

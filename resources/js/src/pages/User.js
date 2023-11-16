@@ -325,7 +325,7 @@ export default function User() {
     var no = 0 + (page - 1) * 100;
 
     return (
-        <Page title="Requests | LoanPe">
+        <Page title="Requests | OneCredit">
             <Container>
                 <Modal
                     open={open}
@@ -471,10 +471,10 @@ export default function User() {
                                                     // aria-checked={isItemSelected}
                                                 >
                                                     <TableCell padding="checkbox">
-                                                        {/* <Checkbox
-                              checked={isItemSelected}
-                              onChange={(event) => handleClick(event, firstName)}
-                            /> */}
+                                                                                    {/* <Checkbox
+                                                        checked={isItemSelected}
+                                                        onChange={(event) => handleClick(event, firstName)}
+                                                        /> */}
                                                         {no}
                                                     </TableCell>
                                                     <TableCell

@@ -5,7 +5,7 @@ import Page from '../components/Page'
 
 export default function Tasks() {
     return (
-        <Page title="Tasks | LoanPe">
+        <Page title="Tasks | OneCredit">
             <Container maxWidth="xl">
                 <Typography variant="h4" gutterBottom>
                     Tasks

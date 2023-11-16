@@ -46,7 +46,7 @@ export default function LandingPage() {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <a className="navbar-brand" href="#">LoanPe</a>
+                <a className="navbar-brand" href="#">One Credit</a>
 
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -75,8 +75,8 @@ export default function LandingPage() {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-12 col-md-10, col-lg-6'>
-                            <h1 className='hero-heading'>LoanPe - Instant Personal Loans</h1>
-                            <p className='hero-helper'>Instant cash loans in India at lowest interest rates.</p>
+                            <h1 className='hero-heading'>One Credit - Loan Guide</h1>
+                            <p className='hero-helper'>Your one stop guide to cash loans in India at lowest interest rates.</p>
                             <a target="_blank" rel="noopener noreferrer" className="google-dwnld" href={`${baseUri}/getApk`}><img src={dwnld} width="200" alt="dwnld-link" /></a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default function LandingPage() {
                                     <img src={fast} />
                                 </div>
                                 <h1 className='feature-heading'>Fast</h1>
-                                <p className='mx-lg-5'>Transfer your LoanPe wallet balance
+                                <p className='mx-lg-5'>Transfer your OneCredit wallet balance
                                     directly to your bank account with just one
                                     click and choose flexible repayment plans
                                     as per your convenience.</p>
@@ -228,7 +228,7 @@ export default function LandingPage() {
                                 <h1 className='dwnld-heading' >Ready To Get Started?</h1>
                                 <p className='dwnld-helper'>No more financial crunch.
                                     We are here to help you for all your quick financial needs.
-                                    LoanPe gives you the amount of loan you require, anytime-anywhere</p>
+                                    One credit gives you the amount of loan you require, anytime-anywhere</p>
                                 <a target="_blank" rel="noopener noreferrer" className="google-dwnld" href={`${baseUri}/getApk`}><img src={dwnld} width="200" alt="dwnld-link" /></a>
                             </div>
                             <div className='col-sm-12 col-md-4'>
@@ -267,7 +267,7 @@ export default function LandingPage() {
                             <div className="d-md-flex px-5 justify-content-around bd-highlight col-md-12 pt-5 pb-5 mb-3">
                                 <div className="p-2 flex-fill bd-highlight mb-5 mb-md-0">
                                     <img src={logo} alt="logo" height="140" width="140" />
-                                    <h2>LoanPe</h2></div>
+                                    <h2>OneCredit</h2></div>
                                 <div className="p-2 flex-fill bd-highlight mb-3 mb-md-0">
                                     <h5 className="text-blue-900 font-semibold text-xl mb-3">Quick Links</h5>
                                     <p className="mb-0 ">Home Loan</p>
@@ -328,7 +328,7 @@ export default function LandingPage() {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-10 text-left">
-                            <p>© Copyright 2023 LoanPe. All Rights Reserved.</p>
+                            <p>© Copyright 2023 OneCredit. All Rights Reserved.</p>
                         </div>
                         <div className="col-sm-2 text-right">
                             <p><b>Have Questions?</b> <br />
@@ -337,7 +337,7 @@ export default function LandingPage() {
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
                                     </i>
                                 </span>
-                                <a href="mailto:help@loanpe.net" className='mx-2' >help@loanpe.net</a>
+                                <a href="mailto:help@OneCredit.net" className='mx-2' >help@OneCredit.net</a>
                             </p>
                         </div>
                     </div>

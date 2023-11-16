@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import {
     Box,
     Button,
@@ -8,26 +8,25 @@ import {
     Divider,
     Grid,
     TextField,
-} from '@mui/material';
-import { fetchAdmin, postAdmin, updateAdmin } from '../../../api';
-import { useDispatch, useSelector } from 'react-redux';
-import { onUpdateAdmin } from '../../../store/actions/index';
+} from "@mui/material";
+import { fetchAdmin, postAdmin, updateAdmin } from "../../../api";
+import { useDispatch, useSelector } from "react-redux";
+import { onUpdateAdmin } from "../../../store/actions/index";
 
 const states = [
     {
-        value: 'alabama',
-        label: 'Alabama'
+        value: "alabama",
+        label: "Alabama",
     },
     {
-        value: 'new-york',
-        label: 'New York'
+        value: "new-york",
+        label: "New York",
     },
     {
-        value: 'san-francisco',
-        label: 'San Francisco'
-    }
+        value: "san-francisco",
+        label: "San Francisco",
+    },
 ];
-
 
 export default function AdminForm() {
     const [adminData, setData] = useState({
@@ -37,42 +36,66 @@ export default function AdminForm() {
         bankIFSCCode: "",
         emailId: "",
         logo: "",
-    })
+        upiId: "",
+        contactNumber: "",
+        whatsappNumber: "",
+    });
     const { adminDetails } = useSelector((state) => state.adminReducers);
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(adminData)
-    }
+        e.preventDefault();
+        console.log(adminData);
+    };
     useEffect(() => {
         if (adminDetails.length > 0) {
-            const { _id, bankAccountNumber, bankAccountname, bankIFSCCode, emailId, logo } = adminDetails[0]
-            setData({ ...adminData, id: _id, bankAccountNumber: bankAccountNumber, bankAccountname: bankAccountname, bankIFSCCode: bankIFSCCode, emailId: emailId, logo: logo })
+            const {
+                _id,
+                bankAccountNumber,
+                bankAccountname,
+                bankIFSCCode,
+                emailId,
+                logo,
+                upiId,
+                contactNumber,
+                whatsappNumber,
+            } = adminDetails[0];
+            setData({
+                ...adminData,
+                id: _id,
+                bankAccountNumber: bankAccountNumber,
+                bankAccountname: bankAccountname,
+                bankIFSCCode: bankIFSCCode,
+                emailId: emailId,
+                upiId: upiId,
+                contactNumber: contactNumber,
+                whatsappNumber: whatsappNumber,
+                logo: logo,
+            });
         }
-    }, [adminDetails])
+    }, [adminDetails]);
 
     const handleSave = () => {
         postAdmin(adminData).then((res) => {
             dispatch(onUpdateAdmin(res));
-        })
-    }
+        });
+    };
 
     const handleUpdate = () => {
         updateAdmin(adminData.id, adminData).then((res) => {
             dispatch(onUpdateAdmin(res));
-            window.location.reload()
-        })
-    }
+            window.location.reload();
+        });
+    };
 
     const renderButton = () => {
-        if (adminData.bankAccountNumber !== '') {
+        if (adminData.bankAccountNumber !== "") {
             return [
                 <Box
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'flex-end',
-                        p: 2
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        p: 2,
                     }}
                 >
                     <Button
@@ -83,16 +106,15 @@ export default function AdminForm() {
                     >
                         Update details
                     </Button>
-                </Box>
-            ]
-
+                </Box>,
+            ];
         } else {
             return [
                 <Box
                     sx={{
-                        display: 'flex',
-                        justifyContent: 'flex-end',
-                        p: 2
+                        display: "flex",
+                        justifyContent: "flex-end",
+                        p: 2,
                     }}
                 >
                     <Button
@@ -103,20 +125,17 @@ export default function AdminForm() {
                     >
                         Save details
                     </Button>
-                </Box>
-            ]
-
+                </Box>,
+            ];
         }
-    }
-
+    };
 
     return (
-
         <form
             autoComplete="off"
             noValidate
             onSubmit={handleSubmit}
-        // {...props}
+            // {...props}
         >
             <Card>
                 <CardHeader
@@ -125,66 +144,112 @@ export default function AdminForm() {
                 />
                 <Divider />
                 <CardContent>
-                    <Grid
-                        container
-                        spacing={3}
-                    >
-                        <Grid
-                            item
-                            md={6}
-                            xs={12}
-                        >
+                    <Grid container spacing={3}>
+                        <Grid item md={6} xs={12}>
                             <TextField
                                 fullWidth
                                 variant="filled"
                                 label="Account Number"
                                 name="accountNumber"
-                                onChange={(e) => setData({ ...adminData, bankAccountNumber: e.target.value })}
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        bankAccountNumber: e.target.value,
+                                    })
+                                }
                                 required
                                 value={adminData.bankAccountNumber}
                             />
                         </Grid>
-                        <Grid
-                            item
-                            md={6}
-                            xs={12}
-                        >
+                        <Grid item md={6} xs={12}>
                             <TextField
                                 fullWidth
                                 label="Account Name"
                                 name="accountName"
-                                onChange={(e) => setData({ ...adminData, bankAccountname: e.target.value })}
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        bankAccountname: e.target.value,
+                                    })
+                                }
                                 required
                                 value={adminData.bankAccountname}
                                 variant="filled"
                             />
                         </Grid>
-                        <Grid
-                            item
-                            md={6}
-                            xs={12}
-                        >
+                        <Grid item md={6} xs={12}>
                             <TextField
                                 fullWidth
                                 label="Email Address"
                                 name="emailId"
-                                onChange={(e) => setData({ ...adminData, emailId: e.target.value })}
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        emailId: e.target.value,
+                                    })
+                                }
                                 required
                                 value={adminData.emailId}
                                 variant="filled"
                             />
                         </Grid>
-                        <Grid
-                            item
-                            md={6}
-                            xs={12}
-                        >
+                        <Grid item md={6} xs={12}>
                             <TextField
                                 fullWidth
                                 label="IFSC Code"
                                 name="IFSCCode"
-                                onChange={(e) => setData({ ...adminData, bankIFSCCode: e.target.value })}
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        bankIFSCCode: e.target.value,
+                                    })
+                                }
                                 value={adminData.bankIFSCCode}
+                                variant="filled"
+                            />
+                        </Grid>
+                        <Grid item md={6} xs={12}>
+                            <TextField
+                                fullWidth
+                                label="UPI Id"
+                                name="UPIId"
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        upiId: e.target.value,
+                                    })
+                                }
+                                value={adminData.upiId}
+                                variant="filled"
+                            />
+                        </Grid>
+                        <Grid item md={6} xs={12}>
+                            <TextField
+                                fullWidth
+                                label="Contact No."
+                                name="ContactNumber"
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        contactNumber: e.target.value,
+                                    })
+                                }
+                                value={adminData.contactNumber}
+                                variant="filled"
+                            />
+                        </Grid>
+                        <Grid item md={6} xs={12}>
+                            <TextField
+                                fullWidth
+                                label="Whatsapp No."
+                                name="WhatsappNumber"
+                                onChange={(e) =>
+                                    setData({
+                                        ...adminData,
+                                        whatsappNumber: e.target.value,
+                                    })
+                                }
+                                value={adminData.whatsappNumber}
                                 variant="filled"
                             />
                         </Grid>

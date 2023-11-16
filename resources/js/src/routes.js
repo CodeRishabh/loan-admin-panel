@@ -13,6 +13,7 @@ import User from "./pages/User";
 import EmiCalculator from "./pages/EmiCalculator";
 import Tasks from "./pages/Tasks";
 import Admin from "./pages/Admin";
+import AdminDetails from "./pages/AdminDetails";
 import Setting from "./pages/Setting";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
@@ -65,6 +66,7 @@ export default function Router() {
                 { path: "setting", element: <Setting /> },
                 { path: "emicalculator", element: <EmiCalculator /> },
                 { path: "tasks", element: <Tasks /> },
+                { path: "admindetails", element: <AdminDetails /> },
                 { path: "rejectedusers", element: <RejectedUsers /> },
             ],
         },

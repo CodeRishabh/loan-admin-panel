@@ -1,8 +1,8 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: 'LoanPe',
-  email: 'admin@loanpe.net',
+  displayName: 'OneCredit',
+  email: 'admin@OneCredit.net',
   photoURL: '/static/mock-images/avatars/avatar_default.jpg'
 };
 
